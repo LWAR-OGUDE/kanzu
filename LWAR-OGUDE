@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CodeImpact-SurveyForm</title>
+        
+    <style>
+ 
+        /* Styling the Body element i.e. Color,
+        Font, Alignment */
+        body {
+            background-color: #05c46b;
+            font-family: Verdana;
+            text-align: center;
+        }
+ 
+        /* Styling the Form (Color, Padding, Shadow) */
+        form {
+            background-color: #fff;
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 30px 20px;
+            box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+        }
+ 
+        /* Styling form-group Class */
+        .form-group {
+            text-align: left;
+            margin-bottom: 25px;
+        }
+ 
+        /* Styling form-group Label */
+        .form-group label {
+            display: block;
+            margin-bottom: 10px;
+        }
+ 
+        /* Styling form-group input,
+        select, textarea */
+        .form-group input,
+        .form-group select,
+        .form-group textarea 
+        {
+            border: 1px solid #777;
+            border-radius: 2px;
+            font-family: inherit;
+            padding: 10px;
+            display: block;
+            width: 95%;
+        }
+ 
+        /* Styling form-group Radio
+        button and Checkbox */
+        .form-group input[type="radio"],
+        .form-group input[type="checkbox"] 
+        {
+            display: inline-block;
+            width: auto;
+        }
+ 
+        /* Styling Button */
+        button {
+            background-color: #05c46b;
+            border: 1px solid #777;
+            border-radius: 2px;
+            font-family: inherit;
+            font-size: 21px;
+            display: block;
+            width: 100%;
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+    </style>
+    </head>
+    <body>
+        <header>
+<div>
+
+<h1 id="title">THE SURVEY FORM FOR KANZU BOOTCAMP</h1>
+
+<img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fstocksnap.io%2Fsearch%2Flove&psig=AOvVaw03jHq6_BrZlGxtFlZ4O44x&ust=1665617309437000&source=images&cd=vfe&ved=0CAgQjRxqFwoTCIihsZKq2foCFQAAAAAdAAAAABAE" alt="kanzucode logo">
+
+<p id="description">KANZU SURVEY FORM</p>
+</div>
+</header>
+
+<!--Create Form-->
+
+<form id="survey-form">
+
+<!--Details-->
+
+<div class="form-group">
+<label for="name" id="name-label">NAME</label>
+
+<!--Input Type Text-->
+<input type="text" id="name" placeholder="Please Enter your name" required/>
+</div>
+
+<div class="form-group">
+<label for="email" id="email-label">EMAIL</label>
+
+<!--Input Type Email-->
+
+<input type="email" id="email" placeholder="Please Enter your email" required/>
+</div>
+
+<div class="form-group">
+<label for="number" id="number-label">AGE</label>
+
+<!--Input Type Number-->
+
+<input type="number" id="number" placeholder="Please Enter your age" min="15" max="30">
+</div>
+
+<div class="form-group">
+<p>What best describes your current Role?</p>
+
+<!--Dropdown Options-->
+
+<select name="role" id="dropdown">
+   <option disabled selected value="">Select current role</option>
+   <option value="Job Seeker">Job Seeker</option>
+   <option value="Student">Student</option>
+   <option value="Church">Church</option>
+   <option value="Other">Other</option>
+</select>
+</div>
+
+<div class="form-group" id="radio-buttons">
+
+<p>Do you like mathematics lessons on Monday Morning?</p>
+
+<!--Input Type Radio Button-->
+
+<label>
+
+   <input type="radio" name="recommend" value="Yes" checked> Definitely
+</label>
+
+<label>
+   <input type="radio" name="recommend" value="Not really"> Maybe
+</label>
+
+<label>
+   <input type="radio" name="recommend" value="Perhaps"> Not sure
+</label>
+
+</div>
+
+<div class="form-group" id="checkboxes">
+
+<p>What would you like to see improved in Mathematics lesson? <span>(check all that apply)</span></p>
+
+<label>
+   <input type="checkbox" checked value="Trigs">
+   Trigonometry
+</label>
+
+<label>
+    <input type="checkbox" value="alegbra">
+    Algebra
+</label>
+
+<label>
+    <input type="checkbox" value="Time">
+    Extend lesson time
+</label>
+
+<label>
+    <input type="checkbox" value="Teacher">
+    Hire qualified teachers
+</label>
+
+<label>
+    <input type="checkbox" value="quiz time">
+    Increase quiz time
+</label>
+
+</div>
+
+<div class="form-group">
+<p>Any comments or suggestions?</p>
+
+<!--multi-line text input control-->
+
+<textarea name="comment" id="comment"  placeholder="Enter your comment"></textarea>
+</div>
+
+<div class="form-group">
+
+<!--multi-line text input control-->
+
+<button type="submit" id="submit">Submit Once Complete</button>
+</div>
+
+</form>
+
+</body>
+</html>
